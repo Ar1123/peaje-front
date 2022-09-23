@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:peaje/config/api/http_connect.dart';
 
@@ -27,6 +29,8 @@ class ArrivalsProvider {
       headers: {},
       path: "arrivals-dev/getReport",
     );
+
+    log("$report", name: "Report");
 
     arrive = Arrive.fromJson(report);
     return arrive;

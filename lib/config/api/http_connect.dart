@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 class HttpRequest {
   final _dio = Dio();
   // ignore: constant_identifier_names
-  static const URLBASE = "http://192.168.100.3:3000/api/v1/";
+  static const URLBASE = "http://192.168.100.4:3000/api/v1/";
 
   Future<Map<String, dynamic>> post({
     required Map<String, dynamic> body,
